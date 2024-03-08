@@ -89,6 +89,7 @@ ALL_DATASET_IMPORTS = [
     ".hr.croatian_news_engri.CroatianNewsENGRIDataset",
     # it
     ".it.itwac.ITWacDataset",
+    ".it.paisa.PaisaCorpus"
     # mt
     ".mt.korpus_malti.KorpusMaltiDataset",
     # nl
