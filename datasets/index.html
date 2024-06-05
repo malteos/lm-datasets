@@ -1,0 +1,1625 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation of the llm-datasets framework.">
+      
+      
+        <meta name="author" content="Malte Ostendorff and llm-datasets contributors">
+      
+      
+        <link rel="canonical" href="https://github.com/malteos/llm-datasets/datasets/">
+      
+      
+        <link rel="prev" href="../overview/">
+      
+      
+        <link rel="next" href="../config-files/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
+    
+    
+      
+        <title>Available datasets - llm-datasets: Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#languages" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="llm-datasets: Documentation" class="md-header__button md-logo" aria-label="llm-datasets: Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            llm-datasets: Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Available datasets
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/malteos/llm-datasets/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="llm-datasets: Documentation" class="md-nav__button md-logo" aria-label="llm-datasets: Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    llm-datasets: Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/malteos/llm-datasets/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Framework overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Available datasets
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Available datasets
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Languages
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data sources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../config-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Config files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extract-text-data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extract text data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../add-your-own-data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adding your own data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../compose-train-validation-data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compose training and validation dataset
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../related-work/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Related work
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    API reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            API reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/base_dataset/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BaseDataset
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/hf_dataset/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HFDataset
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/jsonl_dataset/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JSONLDataset
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/config/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Config
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Languages
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data sources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Available datasets</h1>
+
+<p># Datasets</p>
+<p>The framework provides 2241 datasets from 62 sources in 164 languages. The languages are as follows: Afrikaans, Amharic, Aragonese, Arabic, Arz, Assamese, Ast, Avaric, Azerbaijani, Azb, Bashkir, Belarusian, Bulgarian, Bihari, Bengali, Tibetan, Bpy, Breton, Bosnian, Bxr, Catalan, Chechen, Ceb, Ckb, Code, Czech, Chuvash, Welsh, Danish, German, Dsb, Dhivehi, Greek, English, Esperanto, Spanish, Estonian, Basque, Persian, Finnish, French, Western Frisian, Irish, Gaelic, Galician, Guaraní, Gom, Gsw, Gujarati, Hausa, Hebrew, Hindi, Croatian, Hsb, Haitian, Hungarian, Armenian, Interlingua, Indonesian, Interlingue, Igbo, Ilo, Ido, Icelandic, Italian, Japanese, Jbo, Javanese, Georgian, Kazakh, Khmer, Kannada, Korean, Krc, Kurdish, Komi, Cornish, Kirghiz, Latin, Luxembourgish, Lez, Limburgish, Lmo, Lao, Lithuanian, Latvian, Mai, Malagasy, Mhr, Min, Macedonian, Malayalam, Mongolian, Marathi, Mrj, Malay, Maltese, Multi, Mwl, Burmese, Mzn, Nah, Nds, Nepali, New, Dutch, Norwegian Nynorsk, Norwegian, Chichewa, Occitan, Oromo, Oriya, Ossetian, Panjabi, Polish, Pms, Pnb, Pashto, Portuguese, Quechua, Romanian, Russian, Kinyarwanda, Sanskrit, Sah, Sindhi, Serbo-Croatian, Sinhalese, Slovak, Slovene, Shona, Somali, Albanian, Serbian, Southern Sotho, Sundanese, Swedish, Swahili, Tamil, Telugu, Tajik, Thai, Tigrinya, Turkmen, Tagalog, Turkish, Tatar, Uighur, Ukrainian, Urdu, Uzbek, Vietnamese, Volapük, Walloon, War, Wuu, X-Eml, Xal, Xhosa, Xmf, Yiddish, Yoruba, Chinese, Zu</p>
+<h2 id="languages">Languages</h2>
+<p><img alt="Tokens by language" src="tokens_by_language.png" /></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">language</th>
+<th style="text-align: left;">reported_tokens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">af</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">am</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">an</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">ar</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">arz</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">as</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">ast</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">av</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">az</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">azb</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">ba</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">be</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">bg</td>
+<td style="text-align: left;">13 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">bh</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">bn</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">bo</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">bpy</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">br</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">bs</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">bxr</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">ca</td>
+<td style="text-align: left;">4 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">ce</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">ceb</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">ckb</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">code</td>
+<td style="text-align: left;">250 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">cs</td>
+<td style="text-align: left;">21 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">cv</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">cy</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">da</td>
+<td style="text-align: left;">11 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">de</td>
+<td style="text-align: left;">26 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">dsb</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">dv</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">el</td>
+<td style="text-align: left;">24 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">en</td>
+<td style="text-align: left;">117 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">eo</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">es</td>
+<td style="text-align: left;">20 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">et</td>
+<td style="text-align: left;">5 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">eu</td>
+<td style="text-align: left;">982 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">fa</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">fi</td>
+<td style="text-align: left;">9 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">fr</td>
+<td style="text-align: left;">60 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">fy</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">ga</td>
+<td style="text-align: left;">669 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">gd</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">gl</td>
+<td style="text-align: left;">36 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">gn</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">gom</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">gsw</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">gu</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">ha</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">he</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">hi</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">hr</td>
+<td style="text-align: left;">8 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">hsb</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">ht</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">hu</td>
+<td style="text-align: left;">12 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">hy</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">ia</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">id</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">ie</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">ig</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">ilo</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">io</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">is</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">it</td>
+<td style="text-align: left;">14 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">ja</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">jbo</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">jv</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">ka</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">kk</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">km</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">kn</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">ko</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">krc</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">ku</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">kv</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">kw</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">ky</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">la</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">lb</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">lez</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">li</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">lmo</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">lo</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">lt</td>
+<td style="text-align: left;">5 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">lv</td>
+<td style="text-align: left;">4 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">mai</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">mg</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">mhr</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">min</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">mk</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">ml</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">mn</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">mr</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">mrj</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">ms</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">mt</td>
+<td style="text-align: left;">4 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">multi</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">mwl</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">my</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">mzn</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">nah</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">nds</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">ne</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">new</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">nl</td>
+<td style="text-align: left;">26 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">nn</td>
+<td style="text-align: left;">301 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">no</td>
+<td style="text-align: left;">5 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">ny</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">oc</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">om</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">or</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">os</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">pa</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">pl</td>
+<td style="text-align: left;">25 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">pms</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">pnb</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">ps</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">pt</td>
+<td style="text-align: left;">24 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">qu</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">ro</td>
+<td style="text-align: left;">9 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">ru</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">rw</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">sa</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">sah</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">sd</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">sh</td>
+<td style="text-align: left;">58 k</td>
+</tr>
+<tr>
+<td style="text-align: left;">si</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">sk</td>
+<td style="text-align: left;">18 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">sl</td>
+<td style="text-align: left;">9 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">sn</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">so</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">sq</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">sr</td>
+<td style="text-align: left;">3 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">st</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">su</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">sv</td>
+<td style="text-align: left;">13 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">sw</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">ta</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">te</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">tg</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">th</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">ti</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">tk</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">tl</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">tr</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">tt</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">ug</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">uk</td>
+<td style="text-align: left;">11 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">ur</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">uz</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">vi</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">vo</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">wa</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">war</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">wuu</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">x-eml</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">xal</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">xh</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">xmf</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">yi</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">yo</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">zh</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">zu</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+</tbody>
+</table>
+<h2 id="data-sources">Data sources</h2>
+<p><img alt="Tokens by source" src="tokens_by_source.png" /></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">source_id</th>
+<th style="text-align: left;">reported_tokens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">curlicat</td>
+<td style="text-align: left;">410 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">macocu</td>
+<td style="text-align: left;">23 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">redpajama</td>
+<td style="text-align: left;">46 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">wura</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">wikihow</td>
+<td style="text-align: left;">2 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">pes2o</td>
+<td style="text-align: left;">42 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">proof_pile</td>
+<td style="text-align: left;">8 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">pile_of_law</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">math_amps</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">edgarcorpus</td>
+<td style="text-align: left;">7 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">bulgarian_news</td>
+<td style="text-align: left;">283 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">bulnc</td>
+<td style="text-align: left;">567 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">openlegaldata</td>
+<td style="text-align: left;">10 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">dewac</td>
+<td style="text-align: left;">2 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">ga_bilingual_legistation</td>
+<td style="text-align: left;">4 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">ga_universal_dependencies</td>
+<td style="text-align: left;">3 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">hrwac</td>
+<td style="text-align: left;">1 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">styria_news</td>
+<td style="text-align: left;">409 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">croatian_news_engri</td>
+<td style="text-align: left;">695 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">itwac</td>
+<td style="text-align: left;">2 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">korpus_malti</td>
+<td style="text-align: left;">366 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">sonar</td>
+<td style="text-align: left;">500 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">cc_gigafida</td>
+<td style="text-align: left;">127 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">academic_slovene_kas</td>
+<td style="text-align: left;">1 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">slwac_web</td>
+<td style="text-align: left;">1 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">sk_court_decisions</td>
+<td style="text-align: left;">11 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">sk_laws</td>
+<td style="text-align: left;">45 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">syn_v9</td>
+<td style="text-align: left;">5 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">cs_en_parallel</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">danish_gigaword</td>
+<td style="text-align: left;">1 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">danewsroom</td>
+<td style="text-align: left;">472 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">dk_clarin</td>
+<td style="text-align: left;">441 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">cabernet</td>
+<td style="text-align: left;">712 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">norwegian_cc</td>
+<td style="text-align: left;">5 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">pl_nkjp</td>
+<td style="text-align: left;">1 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">pl_parliamentary_corpus</td>
+<td style="text-align: left;">671 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">parlamento_pt</td>
+<td style="text-align: left;">819 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">brwac</td>
+<td style="text-align: left;">3 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">seimas_lt_en</td>
+<td style="text-align: left;">48 k</td>
+</tr>
+<tr>
+<td style="text-align: left;">state_related_latvian_web</td>
+<td style="text-align: left;">1 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">greek_legal_code</td>
+<td style="text-align: left;">45 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">greek_web_corpus</td>
+<td style="text-align: left;">3 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">estonian_reference_corpus</td>
+<td style="text-align: left;">175 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">enc2021</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">ekspress</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">euscrawl</td>
+<td style="text-align: left;">846 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">spanish_legal</td>
+<td style="text-align: left;">3 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">ylenews</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">sv_gigaword</td>
+<td style="text-align: left;">1 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">srpkor</td>
+<td style="text-align: left;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: left;">marcell_legislative_subcorpus_v2</td>
+<td style="text-align: left;">31 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">uk_laws</td>
+<td style="text-align: left;">579 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">eurlex</td>
+<td style="text-align: left;">121 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">legal_mc4</td>
+<td style="text-align: left;">29 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">wiki</td>
+<td style="text-align: left;">12 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">wikibooks</td>
+<td style="text-align: left;">353 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">wikiquote</td>
+<td style="text-align: left;">268 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">wikinews</td>
+<td style="text-align: left;">79 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">wikisource</td>
+<td style="text-align: left;">2 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">wikivoyage</td>
+<td style="text-align: left;">132 M</td>
+</tr>
+<tr>
+<td style="text-align: left;">colossal_oscar</td>
+<td style="text-align: left;">154 B</td>
+</tr>
+<tr>
+<td style="text-align: left;">starcoder</td>
+<td style="text-align: left;">250 B</td>
+</tr>
+</tbody>
+</table>
+<p><em>This page is automatically generated.</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
+      
+    
+  </body>
+</html>
